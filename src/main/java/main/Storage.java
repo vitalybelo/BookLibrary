@@ -39,4 +39,9 @@ public class Storage {
         books.clear();
     }
 
+    public static void modifyBook (int id, Book book) {
+        if (books.containsKey(id)) {
+            books.put(id, book);
+        }
+    }
 }

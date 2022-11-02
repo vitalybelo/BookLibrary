@@ -32,6 +32,11 @@ public class BookController {
         Storage.deleteAllBook();
     }
 
+    @PutMapping("/books/")
+    public void put(int id, Book book) {
+        Storage.modifyBook(id, book);
+    }
+
     @GetMapping("/books/{id}")
     public ResponseEntity get(@PathVariable int id) {
 
