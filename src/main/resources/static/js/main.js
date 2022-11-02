@@ -41,7 +41,7 @@ $(function(){
             },
             error: function(response)
             {
-                if(response.status == 404) {
+                if(response.status === 404) {
                     alert('Книга не найдена!');
                 }
             }
