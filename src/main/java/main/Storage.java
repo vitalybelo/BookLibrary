@@ -16,7 +16,6 @@ public class Storage {
     }
 
     public static int addBook(Book book) {
-
         int id = bookId++;
         book.setId(id);
         books.put(id, book);
@@ -24,7 +23,6 @@ public class Storage {
     }
 
     public static Book getBook(int id) {
-
         if (books.containsKey(id))
             return books.get(id);
         return null;
