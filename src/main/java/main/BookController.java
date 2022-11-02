@@ -13,15 +13,23 @@ public class BookController {
     //@RequestMapping(value = "/books/", method = RequestMethod.GET)
     @GetMapping("/books/")
     public List<Book> list() {
-
         return Storage.getAllBooks();
     }
 
     //@RequestMapping(value = "/books/", method = RequestMethod.POST)
     @PostMapping("/books/")
     public int add(Book book) {
-
         return Storage.addBook(book);
+    }
+
+    @DeleteMapping("/books/{id}")
+    public void delete (@PathVariable int id) {
+        Storage.deleteBook(id);
+    }
+
+    @DeleteMapping("/books/")
+    public void deleteAll () {
+        Storage.deleteAllBook();
     }
 
     @GetMapping("/books/{id}")

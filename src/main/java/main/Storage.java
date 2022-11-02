@@ -12,7 +12,6 @@ public class Storage {
     private static final HashMap<Integer, Book> books = new HashMap<>();
 
     public static List<Book> getAllBooks () {
-
         return new ArrayList<>(books.values());
     }
 
@@ -29,6 +28,15 @@ public class Storage {
         if (books.containsKey(id))
             return books.get(id);
         return null;
+    }
+
+    public static void deleteBook (int id) {
+        books.remove(id);
+    }
+
+    public static void deleteAllBook () {
+        bookId = 1;
+        books.clear();
     }
 
 }
