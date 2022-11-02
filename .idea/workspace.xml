@@ -7,7 +7,6 @@
     <list default="true" id="e7078910-1702-4c82-b079-a85253d37113" name="Changes" comment="init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Storage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +117,10 @@
       <workItem from="1667312642991" duration="2039000" />
       <workItem from="1667314699639" duration="3288000" />
       <workItem from="1667372559479" duration="1772000" />
-      <workItem from="1667376626405" duration="16789000" />
+      <workItem from="1667376626405" duration="16951000" />
+      <workItem from="1667397152831" duration="11000" />
+      <workItem from="1667399349988" duration="125000" />
+      <workItem from="1667399903785" duration="106000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1667314448539</created>
@@ -169,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667393685293</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="init">
+      <created>1667396186575</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667396186575</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +189,34 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
