@@ -37,9 +37,19 @@ public class Storage {
         books.clear();
     }
 
-    public static void modifyBook (int id, Book book) {
+    public static int editBook(Book book) {
+        int id = book.getId();
         if (books.containsKey(id)) {
+            Book b = books.get(id);
+            if (book.getName() == null) {
+                book.setName(b.getName());
+            }
+            if (book.getYear() == 0) {
+                book.setYear(b.getYear());
+            }
             books.put(id, book);
+            return id;
         }
+        return -1;
     }
 }

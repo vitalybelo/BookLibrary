@@ -1,11 +1,13 @@
 package response;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@Entity
 public class Book {
 
     private int id;
     private String name;
     private int year;
-
 
     public int getId() {
         return id;

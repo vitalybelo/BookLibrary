@@ -9,13 +9,11 @@ import response.Book;
 @RestController
 public class BookController {
 
-    //@RequestMapping(value = "/books/", method = RequestMethod.GET)
     @GetMapping("/books/")
     public List<Book> list() {
         return Storage.getAllBooks();
     }
 
-    //@RequestMapping(value = "/books/", method = RequestMethod.POST)
     @PostMapping("/books/")
     public int add(Book book) {
         return Storage.addBook(book);
@@ -32,8 +30,8 @@ public class BookController {
     }
 
     @PutMapping("/books/")
-    public void put(int id, Book book) {
-        Storage.modifyBook(id, book);
+    public int edit(Book book) {
+        return Storage.editBook(book);
     }
 
     @GetMapping("/books/{id}")
