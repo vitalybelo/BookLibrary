@@ -44,18 +44,39 @@ public class BookController {
     }
 
     @DeleteMapping("/books/{id}")
-    public void delete (@PathVariable int id) {
-        Storage.deleteBook(id);
+    public int delete (@PathVariable int id) {
+        Optional<Book> optionalBook = bookRepository.findById(id);
+        if (optionalBook.isPresent()) {
+            bookRepository.delete(optionalBook.get());
+            return id;
+        }
+        return -1;
     }
 
     @DeleteMapping("/books/")
     public void deleteAll () {
-        Storage.deleteAllBook();
+        bookRepository.deleteAll();
     }
 
     @PutMapping("/books/")
     public int edit(Book book) {
-        return Storage.editBook(book);
+        int id = book.getId();
+        if (id <= 0) return -1;     // ?id=? не был передан в запросе
+
+        Optional<Book> optionalBook = bookRepository.findById(id);
+        if (optionalBook.isPresent()) {
+            Book b = optionalBook.get();
+            if (book.getName() == null) {
+                book.setName(b.getName());  // &name= название не было передано
+            }
+            if (book.getYear() == 0) {
+                book.setYear(b.getYear());  // &year= год не был переан в запросе
+            }
+            bookRepository.save(book);
+            return id;
+        }
+        return -1;
     }
+
 
 }
