@@ -1,6 +1,6 @@
-package main;
+package main.controlers;
 
-import main.model.BookRepository;
+import main.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,13 +10,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import main.model.Book;
+import main.repository.Book;
 
 @RestController
 public class BookController {
 
     @Autowired
     private BookRepository bookRepository;
+
+    public BookController(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
+    }
 
     @GetMapping("/books/")
     public List<Book> list() {
@@ -70,7 +74,7 @@ public class BookController {
                 book.setName(b.getName());  // &name= название не было передано
             }
             if (book.getYear() == 0) {
-                book.setYear(b.getYear());  // &year= год не был переан в запросе
+                book.setYear(b.getYear());  // &year= год не был передан в запросе
             }
             bookRepository.save(book);
             return id;
