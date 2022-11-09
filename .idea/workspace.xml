@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7078910-1702-4c82-b079-a85253d37113" name="Changes" comment="step 4">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/controlers/DefaultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controlers/DefaultController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +75,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;ToolWindowDB Browser.ShowToolbar&quot;: &quot;false&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;S:/SkillBox/java_basics/SpringBootWeb/ToDoList&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/AGoogle/SkillBox/bookLibrary/target&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.49310344&quot;,
@@ -84,6 +89,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AGoogle\SkillBox\bookLibrary\target" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\AGoogle\SkillBox\bookLibrary\src\main\resources\templates" />
       <recent name="D:\AGoogle\SkillBox\bookLibrary\src\main\resources\static" />
@@ -108,6 +116,31 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Main (1)">
+    <configuration name="BookLibrary [package]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="Main (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="BookLibrary" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="main.Main" />
@@ -187,7 +220,8 @@
       <workItem from="1667632738409" duration="3048000" />
       <workItem from="1667728457902" duration="440000" />
       <workItem from="1667803168783" duration="339000" />
-      <workItem from="1667808450963" duration="2941000" />
+      <workItem from="1667808450963" duration="3020000" />
+      <workItem from="1667892787601" duration="6910000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1667314448539</created>
@@ -315,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667811229732</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="step 4">
+      <created>1667811400828</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1667811400828</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
