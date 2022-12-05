@@ -31,7 +31,8 @@ public class DefaultController {
 
         model.addAttribute("books", books);
         model.addAttribute("booksCount", books.size());
-        model.addAttribute("someParameter", someParameter);
+        model.addAttribute("someParameter", someParameter); // включи его в HTML чтобы увидеть что это такое
+
 
         return "index";
     }
